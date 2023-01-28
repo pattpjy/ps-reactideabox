@@ -1,11 +1,13 @@
 form {
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 input,
 button {
   margin: 5px;
-  width: 30%;
+  width: 65%;
   border: 2px solid black;
-  font-size: 18px;
+  font-size: 16px;
 }

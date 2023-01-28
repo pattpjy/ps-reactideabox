@@ -1,0 +1,20 @@
+.main-view {
+  display: flex;
+  flex-direction: row;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 165, 75);
+}
+
+.side-nav {
+  width: 200px;
+  background-color: blueviolet;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}

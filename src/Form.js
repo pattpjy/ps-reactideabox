@@ -35,12 +35,14 @@ class Form extends Component {
           placeholder="Title"
           name="title"
           value={this.state.title}
+          onChange={(event) => this.handleChange(event)}
         />
         <input
           type="text"
           placeholder="Description"
           name="description"
           value={this.state.description}
+          onChange={(event) => this.handleChange(event)}
         />
         <button onClick={(event) => this.submitIdea(event)}>SUBMIT</button>
         {/* //adding the event listener to the button */}

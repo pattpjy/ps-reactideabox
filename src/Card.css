@@ -1,5 +1,32 @@
 .card {
   box-sizing: border-box;
-  border: 3px solid black;
+  border: 3px solid rgb(231, 55, 55);
   padding: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  border: 2px solid rgb(55, 231, 58);
+}
+
+.starButtonActive,
+.starBtn {
+  background-image: url("../Assets/star.svg");
+  background-repeat: no-repeat;
+  background-color: blueviolet;
+  height: 50px;
+  width: 50px;
+}
+.starButtonActive {
+  background-image: url("../Assets/star-active.svg");
+}
+
+.deleteBtn {
+  background-image: url("../Assets/delete.svg");
+  background-repeat: no-repeat;
+  background-color: blueviolet;
+  height: 50px;
+  width: 50px;
 }
