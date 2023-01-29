@@ -5,19 +5,23 @@ import Ideas from "./IdeasCard";
 import Form from "./Form";
 import "./App.css";
 import ideasData from "./ideaData";
+import repoIdeas from "./ideasRepo";
 
 class App extends Component {
   constructor() {
     super();
+    this.allIdeas = new repoIdeas(ideasData); //this represent data in memory
     this.state = {
-      ideas: ideasData, //this represent in memory
+      ideas: this.allIdeas.getAllIdeas(), //this represent data in memory
     };
     this.addIdea = this.addIdea.bind(this);
-    this.starIdea = this.starIdea.bind(this);
+    this.starIdea = this.starIdea.bind(this); // do we need this?
+    this.showAllIdeas = this.showAllIdeas.bind(this);
   }
 
   addIdea = (newIdea) => {
-    this.setState({ ideas: [...this.state.ideas, newIdea] });
+    this.allIdeas.addingIdea(newIdea);
+    this.setState({ ideas: this.allIdeas.getAllIdeas() });
   };
 
   starIdea = (id) => {
@@ -30,7 +34,6 @@ class App extends Component {
         }
         return idea;
       });
-      console.log(updatedStar);
       return {
         ideas: updatedStar,
       };
@@ -44,10 +47,12 @@ class App extends Component {
     this.setState({ ideas: filterStaredIdea });
   };
   deleteIdea = (id) => {
-    console.log(id);
-    const filteredIdeas = this.state.ideas.filter((idea) => idea.id !== id);
-
-    this.setState({ ideas: filteredIdeas });
+    // const filteredIdeas = this.state.ideas.filter((idea) => idea.id !== id);
+    this.allIdeas.deletedIdea(id);
+    this.setState({ ideas: this.allIdeas.getAllIdeas() });
+  };
+  showAllIdeas = () => {
+    this.setState({ ideas: this.allIdeas.getAllIdeas() });
   };
 
   render() {
@@ -59,14 +64,24 @@ class App extends Component {
         </nav>
         <main className="App">
           <h1>IdeaBox</h1>
-          <button onClick={(event) => this.showStaredIdea(event)}>
+          <button
+            className="show-fav-btn"
+            onClick={(event) => this.showStaredIdea(event)}
+          >
             Show Favorite
+          </button>
+          <button
+            className="show-all"
+            onClick={(event) => this.showAllIdeas(event)}
+          >
+            Show All
           </button>
           <Ideas
             ideas={this.state.ideas}
             onDeleteIdea={this.deleteIdea}
             onStarIdea={this.starIdea}
             showStaredIdea={this.showStaredIdea}
+            showAllIdeas={this.showAllIdeas}
           />
         </main>
       </div>

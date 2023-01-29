@@ -2,7 +2,13 @@ import React from "react";
 import "./Ideas.css";
 import Card from "./Card";
 
-const Ideas = ({ ideas, onDeleteIdea, onStarIdea, showStaredIdea }) => {
+const Ideas = ({
+  ideas,
+  onDeleteIdea,
+  onStarIdea,
+  showStaredIdea,
+  showAllIdeas,
+}) => {
   const ideaCards = ideas.map((idea) => {
     return (
       <Card
@@ -14,6 +20,7 @@ const Ideas = ({ ideas, onDeleteIdea, onStarIdea, showStaredIdea }) => {
         isStarred={idea.isStarred} // where do I put true or false for stared value
         onStarIdea={onStarIdea}
         showStaredIdea={showStaredIdea}
+        showAllIdeas={showAllIdeas}
       />
     );
   });

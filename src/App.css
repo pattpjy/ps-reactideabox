@@ -18,3 +18,8 @@
   display: flex;
   flex-direction: row;
 }
+
+.show-all,
+.show-fav-btn {
+  width: 100px;
+}
