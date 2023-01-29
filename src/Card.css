@@ -16,9 +16,6 @@
   height: auto;
 }
 
-.starButtonActive {
-  background-image: url("../Assets/star-active.svg");
-}
 .fa-solid.fa-heart,
 .fa-light.fa-heart,
 .fa-light.fa-xmark {
