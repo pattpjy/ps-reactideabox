@@ -11,19 +11,23 @@ const Card = ({
 }) => {
   return (
     <div className="card">
+      <div className="card-body">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
       <div className="card-header">
         <button
-          className={isStarred ? "starButtonActive" : "starBtn"}
+          className={isStarred ? "fa-solid fa-heart" : "fa-light fa-heart"}
           //maybe missing state where it check if staredIdea is equal to true
           onClick={() => {
             onStarIdea(id);
           }}
         ></button>
-
-        <button className="deleteBtn" onClick={() => onDeleteIdea(id)}></button>
+        <button
+          className="fa-light fa-xmark"
+          onClick={() => onDeleteIdea(id)}
+        ></button>
       </div>
-      <h3>{title}</h3>
-      <p>{description}</p>
     </div>
   );
 };

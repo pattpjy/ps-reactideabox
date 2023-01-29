@@ -31,6 +31,7 @@ class Form extends Component {
     return (
       <form>
         <input
+          className="title"
           type="text"
           placeholder="Title"
           name="title"
@@ -38,6 +39,7 @@ class Form extends Component {
           onChange={(event) => this.handleChange(event)}
         />
         <input
+          className="description"
           type="text"
           placeholder="Description"
           name="description"
