@@ -59,23 +59,25 @@ class App extends Component {
     return (
       <div className="main-view">
         <nav className="side-nav">
-          <h2>Add awesome idea</h2>
-          <Form className="form" addIdea={this.addIdea} />
-        </nav>
-        <main className="App">
-          <h1>IdeaBox</h1>
+          <h2>my ideas</h2>
           <button
             className="show-fav-btn"
             onClick={(event) => this.showStaredIdea(event)}
           >
+            <i className="fa-light fa-heart"></i>
             Show Favorite
           </button>
           <button
             className="show-all"
             onClick={(event) => this.showAllIdeas(event)}
           >
+            <i className="fa-light fa-house"></i>
             Show All
           </button>
+        </nav>
+        <main className="App">
+          <h1>Be inspired today</h1>
+          <Form className="form" addIdea={this.addIdea} />
           <Ideas
             ideas={this.state.ideas}
             onDeleteIdea={this.deleteIdea}
