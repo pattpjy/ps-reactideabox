@@ -126,6 +126,7 @@ Add Project description
 
 <!-- ARCHITECTURE -->
 ## Architecture
+<img width="743" alt="architecture diagram" src="https://user-images.githubusercontent.com/111454351/215878023-e11a05f8-e6ad-4e6c-9ec9-7feecc4adf31.png">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
