@@ -25,27 +25,15 @@ class App extends Component {
   };
 
   starIdea = (id) => {
-    //update staredIdea value to true >> idea[staredIdea] = true
-    this.setState((prevState) => {
-      const updatedStar = prevState.ideas.map((idea) => {
-        if (idea.id === id) {
-          idea["isStarred"] = true;
-          console.log("star is click");
-        }
-        return idea;
-      });
-      return {
-        ideas: updatedStar,
-      };
-    });
+    this.allIdeas.switchingFav(id);
+    this.setState({ ideas: this.allIdeas.getAllIdeas() });
   };
-  showStaredIdea = () => {
-    const filterStaredIdea = this.state.ideas.filter(
-      (idea) => idea.isStarred === true
-    );
 
-    this.setState({ ideas: filterStaredIdea });
+  showStarredIdea = () => {
+    const showIdeas = this.allIdeas.getStarredIdea();
+    this.setState({ ideas: showIdeas });
   };
+
   deleteIdea = (id) => {
     // const filteredIdeas = this.state.ideas.filter((idea) => idea.id !== id);
     this.allIdeas.deletedIdea(id);
@@ -62,7 +50,7 @@ class App extends Component {
           <h2>my ideas</h2>
           <button
             className="show-fav-btn"
-            onClick={(event) => this.showStaredIdea(event)}
+            onClick={(event) => this.showStarredIdea(event)}
           >
             <i className="fa-light fa-heart"></i>
             Show Favorite
@@ -82,7 +70,7 @@ class App extends Component {
             ideas={this.state.ideas}
             onDeleteIdea={this.deleteIdea}
             onStarIdea={this.starIdea}
-            showStaredIdea={this.showStaredIdea}
+            showStarredIdea={this.showStarredIdea}
             showAllIdeas={this.showAllIdeas}
           />
         </main>
