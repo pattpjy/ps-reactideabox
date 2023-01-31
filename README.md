@@ -38,6 +38,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#planning">Planning</a></li>
     <li><a href="#architecture">Architecture</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
   </ol>
@@ -112,10 +113,25 @@ Add Project description
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<!-- PLANNING -->
+
+## Planning
+
+### drafting design
+<img width="936" alt="sketch" src="https://user-images.githubusercontent.com/111454351/215876978-101b9130-0ba7-4786-a497-35fb951e65eb.png">
+
+
+
+
 <!-- ARCHITECTURE -->
 ## Architecture
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
 <!-- ROADMAP -->
 
 ## Roadmap
