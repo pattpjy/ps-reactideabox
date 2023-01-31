@@ -4,7 +4,10 @@ import "./Card.css";
 class Card extends Component {
   constructor({ title, description, id, onDeleteIdea, isStarred, onStarIdea }) {
     super();
-    this.state = {};
+    this.state = {
+      // there a change in state so when there's a click on heart, stage changed
+      // show comment button
+    };
     this.title = title;
     this.description = description;
     this.id = id;
@@ -12,6 +15,9 @@ class Card extends Component {
     this.isStarred = isStarred;
     this.onStarIdea = onStarIdea;
   }
+  openComment = () => {};
+
+  closeComment = () => {};
 
   render() {
     return (
@@ -25,7 +31,7 @@ class Card extends Component {
           <div className="card-header">
             <button
               className={
-                this.isStarred ? "fa-solid fa-heart" : "fa-light fa-heart"
+                this.props.isStarred ? "fa-solid fa-heart" : "fa-light fa-heart"
               }
               //maybe missing state where it check if staredIdea is equal to true
               onClick={() => {
@@ -37,7 +43,12 @@ class Card extends Component {
               onClick={() => this.onDeleteIdea(this.id)}
             ></button>
           </div>
-          <button className="comment-btn">
+          <button
+            className="comment-btn"
+            onClick={() => {
+              this.openComment();
+            }}
+          >
             <i className="fa-light fa-comment-dots"></i> comment
           </button>
         </div>

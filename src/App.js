@@ -14,9 +14,9 @@ class App extends Component {
     this.state = {
       ideas: this.allIdeas.getAllIdeas(), //this represent data in memory
     };
-    this.addIdea = this.addIdea.bind(this);
-    this.starIdea = this.starIdea.bind(this); // do we need this?
-    this.showAllIdeas = this.showAllIdeas.bind(this);
+    // this.addIdea = this.addIdea.bind(this);
+    // this.starIdea = this.starIdea.bind(this); // do we need this?
+    // this.showAllIdeas = this.showAllIdeas.bind(this);
   }
 
   addIdea = (newIdea) => {
