@@ -13,7 +13,6 @@ class repoIdeas {
   }
   getStarredIdea() {
     const staredIdeas = this.allIdeas.filter((idea) => {
-      console.log(idea);
       return idea.isStarred === true;
     });
     return staredIdeas || [];

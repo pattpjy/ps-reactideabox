@@ -26,6 +26,7 @@ class App extends Component {
 
   starIdea = (id) => {
     this.allIdeas.switchingFav(id);
+    console.log("is switching");
     this.setState({ ideas: this.allIdeas.getAllIdeas() });
   };
 
