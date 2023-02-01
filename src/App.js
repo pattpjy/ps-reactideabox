@@ -43,6 +43,10 @@ class App extends Component {
   showAllIdeas = () => {
     this.setState({ ideas: this.allIdeas.getAllIdeas() });
   };
+  addComment = (id, inputComment) => {
+    this.allIdeas.addingComment(id, inputComment);
+    this.setState({ ideas: this.allIdeas.getAllIdeas() });
+  };
 
   render() {
     return (
@@ -73,6 +77,7 @@ class App extends Component {
             onStarIdea={this.starIdea}
             showStarredIdea={this.showStarredIdea}
             showAllIdeas={this.showAllIdeas}
+            onComment={this.addComment}
           />
         </main>
       </div>

@@ -26,6 +26,10 @@ class repoIdeas {
     });
     this.allIdeas.splice(indexFound, 1);
   }
+  addingComment(id, inputComment) {
+    const commentedIdea = this.getIdeaById(id);
+    commentedIdea["comment"] = inputComment;
+  }
 
   switchingFav(id) {
     const foundIdea = this.getIdeaById(id);

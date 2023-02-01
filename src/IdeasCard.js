@@ -8,6 +8,7 @@ const Ideas = ({
   onStarIdea,
   showStarredIdea,
   showAllIdeas,
+  onComment,
 }) => {
   const ideaCards = ideas.map((idea) => {
     return (
@@ -21,6 +22,8 @@ const Ideas = ({
         onStarIdea={onStarIdea}
         showStarredIdea={showStarredIdea}
         showAllIdeas={showAllIdeas}
+        onComment={onComment}
+        showComment={idea.comment}
       />
     );
   });
