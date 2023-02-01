@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ps-reactideabox/static/css/main.2d7d7907.css",
+    "main.js": "/ps-reactideabox/static/js/main.d00667a8.js",
+    "static/js/787.14dc259f.chunk.js": "/ps-reactideabox/static/js/787.14dc259f.chunk.js",
+    "index.html": "/ps-reactideabox/index.html",
+    "main.2d7d7907.css.map": "/ps-reactideabox/static/css/main.2d7d7907.css.map",
+    "main.d00667a8.js.map": "/ps-reactideabox/static/js/main.d00667a8.js.map",
+    "787.14dc259f.chunk.js.map": "/ps-reactideabox/static/js/787.14dc259f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d7d7907.css",
+    "static/js/main.d00667a8.js"
+  ]
+}
