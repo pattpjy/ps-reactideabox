@@ -8,6 +8,7 @@ const Ideas = ({
   onStarIdea,
   showStarredIdea,
   showAllIdeas,
+  onComment,
 }) => {
   const ideaCards = ideas.map((idea) => {
     return (
@@ -17,10 +18,12 @@ const Ideas = ({
         id={idea.id}
         key={idea.id}
         onDeleteIdea={onDeleteIdea} //naming - use onXxxx when there's action that going to happened on the component
-        isStarred={idea.isStarred} // where do I put true or false for stared value
+        isStarred={idea.isStarred}
         onStarIdea={onStarIdea}
         showStarredIdea={showStarredIdea}
         showAllIdeas={showAllIdeas}
+        onComment={onComment}
+        showComment={idea.comment}
       />
     );
   });

@@ -13,7 +13,6 @@ class repoIdeas {
   }
   getStarredIdea() {
     const staredIdeas = this.allIdeas.filter((idea) => {
-      console.log(idea);
       return idea.isStarred === true;
     });
     return staredIdeas || [];
@@ -26,6 +25,10 @@ class repoIdeas {
       return idea.id === id;
     });
     this.allIdeas.splice(indexFound, 1);
+  }
+  addingComment(id, inputComment) {
+    const commentedIdea = this.getIdeaById(id);
+    commentedIdea["comment"] = inputComment;
   }
 
   switchingFav(id) {

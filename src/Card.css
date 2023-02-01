@@ -8,8 +8,9 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .card-body,
-.card-header {
+.card-action {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,4 +24,29 @@
   width: 50px;
   border: none;
   background: none;
+}
+
+.fa-light.fa-comment-dots {
+  margin-right: 5px;
+}
+
+.comment-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  border-radius: 18px;
+  border: none;
+}
+.comment-btn:hover {
+  border-radius: 18px;
+  background-color: rgba(73, 80, 87, 0.1);
+}
+.submit-comment-btn {
+  border: none;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
 }

@@ -14,9 +14,9 @@ class App extends Component {
     this.state = {
       ideas: this.allIdeas.getAllIdeas(), //this represent data in memory
     };
-    this.addIdea = this.addIdea.bind(this);
-    this.starIdea = this.starIdea.bind(this); // do we need this?
-    this.showAllIdeas = this.showAllIdeas.bind(this);
+    // this.addIdea = this.addIdea.bind(this);
+    // this.starIdea = this.starIdea.bind(this); // do we need this?
+    // this.showAllIdeas = this.showAllIdeas.bind(this);
   }
 
   addIdea = (newIdea) => {
@@ -26,6 +26,7 @@ class App extends Component {
 
   starIdea = (id) => {
     this.allIdeas.switchingFav(id);
+    console.log("is switching");
     this.setState({ ideas: this.allIdeas.getAllIdeas() });
   };
 
@@ -40,6 +41,10 @@ class App extends Component {
     this.setState({ ideas: this.allIdeas.getAllIdeas() });
   };
   showAllIdeas = () => {
+    this.setState({ ideas: this.allIdeas.getAllIdeas() });
+  };
+  addComment = (id, inputComment) => {
+    this.allIdeas.addingComment(id, inputComment);
     this.setState({ ideas: this.allIdeas.getAllIdeas() });
   };
 
@@ -72,6 +77,7 @@ class App extends Component {
             onStarIdea={this.starIdea}
             showStarredIdea={this.showStarredIdea}
             showAllIdeas={this.showAllIdeas}
+            onComment={this.addComment}
           />
         </main>
       </div>
