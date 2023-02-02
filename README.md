@@ -1,14 +1,4 @@
 <a name="readme-top"></a>
-
-## Contributors
-
-[![Patt][patt-badge]][patt-url]
-<br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    Add Image or Logo of the project
-  </a>
-
 <h3 align="center">Idea Box</h3>
 
   <p align="center">
@@ -47,9 +37,6 @@
 ## About The Project
 
 
-
-
-
 Add vdo walk through
 
 Add Project description 
@@ -57,17 +44,7 @@ Add Project description
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
 
-- [![Javascript][javascript.js]][javascript-url]
-- [![CSS][css]][css-url]
-- [![HTML][html]][html-url]
-- [![Webpack][webpack]][webpack-url]
-- [![API][api]][api-url]
-- [![Mocha][mocha]][mocha-url]
-- [![Chai][chai]][chai-url]
-- [![Git][git]][git-url]
-- [![GitHub][github]][github-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -76,40 +53,24 @@ Add Project description
 
 ### Installation
 
-1. Fork the Repo from the [Repository](https://github.com/turingschool-examples/fitlit-starter-kit)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone git@github.com:pattpjy/ps-reactideabox.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Run npm start
+3. Run npm start
    ```sh
    npm start
    ```
-5. Use the Link that is given in the Terminal & Open in Browser
+4. Use the Link that is given in the Terminal & Open in Browser
    ```sh
    Example: http://localhost:8080/
    ```
    
-## API Installation
 
-6. Clone the repo
-      ```sh
-   git clone git@github.com:xxxx
-   ```
-7. cd into it from terminal
-8. Install NPM packages
-   ```sh
-   npm install
-   ```
-9. Run npm start
-   ```sh
-   npm start
-   ```
-10. Close using control + c
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,7 +79,7 @@ Add Project description
 
 ## Planning
 
-### drafting design
+### Design Draft
 <img width="936" alt="sketch" src="https://user-images.githubusercontent.com/111454351/215876978-101b9130-0ba7-4786-a497-35fb951e65eb.png">
 
 
@@ -126,7 +87,8 @@ Add Project description
 
 <!-- ARCHITECTURE -->
 ## Architecture
-<img width="743" alt="architecture diagram" src="https://user-images.githubusercontent.com/111454351/215878023-e11a05f8-e6ad-4e6c-9ec9-7feecc4adf31.png">
+
+<img width="540" alt="architecture diagram" src="https://user-images.githubusercontent.com/111454351/216211350-12078c8f-8620-4007-a40e-0fd4c0353b34.png">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,6 +110,21 @@ See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a f
 - need update
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+- [![Javascript][javascript.js]][javascript-url]
+- [![CSS][css]][css-url]
+- [![HTML][html]][html-url]
+- [![Webpack][webpack]][webpack-url]
+- [![API][api]][api-url]
+- [![Mocha][mocha]][mocha-url]
+- [![Chai][chai]][chai-url]
+- [![Git][git]][git-url]
+- [![GitHub][github]][github-url]
+
+
+
 
 [ian-badge]: https://img.shields.io/badge/-Ian%20Nordby-orange
 [ian-url]: https://github.com/nordbyi
