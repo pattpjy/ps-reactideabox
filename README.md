@@ -1,4 +1,5 @@
 <a name="readme-top"></a>
+
 <h3 align="center">Idea Box</h3>
 
   <p align="center">
@@ -36,16 +37,13 @@
 
 ## About The Project
 
+User can add idea and description and the application will generate idea card. User can mark idea as favorite and delete the idea.
 
 Add vdo walk through
 
-Add Project description 
-
+Add Project description
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,31 +67,24 @@ Add Project description
    ```sh
    Example: http://localhost:8080/
    ```
-   
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- PLANNING -->
 
 ## Planning
 
 ### Design Draft
+
 <img width="936" alt="sketch" src="https://user-images.githubusercontent.com/111454351/215876978-101b9130-0ba7-4786-a497-35fb951e65eb.png">
 
-
-
-
 <!-- ARCHITECTURE -->
+
 ## Architecture
 
 <img width="540" alt="architecture diagram" src="https://user-images.githubusercontent.com/111454351/216211350-12078c8f-8620-4007-a40e-0fd4c0353b34.png">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 <!-- ROADMAP -->
 
@@ -103,6 +94,7 @@ Add Project description
 - [] Need update
 
 See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a full list of proposed features (and known issues).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Future Additions
@@ -122,9 +114,6 @@ See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a f
 - [![Chai][chai]][chai-url]
 - [![Git][git]][git-url]
 - [![GitHub][github]][github-url]
-
-
-
 
 [ian-badge]: https://img.shields.io/badge/-Ian%20Nordby-orange
 [ian-url]: https://github.com/nordbyi
