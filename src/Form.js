@@ -7,6 +7,7 @@ class Form extends Component {
     this.state = {
       title: "",
       description: "",
+      incompleteForm: true,
     };
   }
   handleChange = (event) => {
@@ -15,12 +16,18 @@ class Form extends Component {
 
   submitIdea = (event) => {
     event.preventDefault(); // prevents the page from refreshing when the form submits
-    const newIdea = {
-      id: Date.now(),
-      ...this.state, // spreading in the title and description
-    };
-    this.props.addIdea(newIdea); // using the addIdea method from App that we passed as a prop to Form
-    this.clearInputs(); // invoking the method I wrote below to reset the inputs
+    if (this.state.title === "" || this.state.description === "") {
+      //if one of the field is empty(not empty is false), form is incomplete
+      this.setState({ incompleteForm: true });
+    } else {
+      this.setState({ incompleteForm: false });
+      const newIdea = {
+        id: Date.now(),
+        ...this.state, // spreading in the title and description
+      };
+      this.props.addIdea(newIdea); // using the addIdea method from App that we passed as a prop to Form
+      this.clearInputs(); // invoking the method I wrote below to reset the inputs
+    }
   };
 
   clearInputs = () => {
@@ -47,6 +54,9 @@ class Form extends Component {
           onChange={(event) => this.handleChange(event)}
         />
         <button onClick={(event) => this.submitIdea(event)}>SUBMIT</button>
+        {/* {this.state.incompleteForm && (
+          <div className="incomplete-form">Please fill all the boxes</div>
+        )} */}
       </form>
     );
   }
