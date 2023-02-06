@@ -36,12 +36,10 @@
 </details>
 
 ## About The Project
+This app allows a user to save their ideas. They can write the title of the idea and the content of the idea itself, which is then saved into cards that are organized into rows which they can refer to later. User can mark idea as favorite and delete the idea card. User can also add comment on the idea card.
 
-User can add idea and description and the application will generate idea card. User can mark idea as favorite and delete the idea.
+:paperclip: Add vdo walk through
 
-Add vdo walk through
-
-Add Project description
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,8 +88,13 @@ Add Project description
 
 ## Roadmap
 
-- [] Need update
-- [] Need update
+- [x] Create input form 
+- [x] Generate idea card
+- [x] Add delete card button
+- [x] Add favorite card button
+- [x] Add show favorite card button
+- [x] Add comment box
+- [x] Add toggle feature to comment box
 
 See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a full list of proposed features (and known issues).
 
@@ -99,7 +102,8 @@ See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a f
 
 ## Future Additions
 
-- need update
+- User can edit comment in the comment box (right now user has to re-type everything )
+- Add categories for ideas (weekend task, daily todo, special occation)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
