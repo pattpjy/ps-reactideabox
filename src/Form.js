@@ -54,9 +54,9 @@ class Form extends Component {
           onChange={(event) => this.handleChange(event)}
         />
         <button onClick={(event) => this.submitIdea(event)}>SUBMIT</button>
-        {/* {this.state.incompleteForm && (
+        {this.state.incompleteForm && (
           <div className="incomplete-form">Please fill all the boxes</div>
-        )} */}
+        )}
       </form>
     );
   }
